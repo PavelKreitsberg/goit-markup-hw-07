@@ -1,0 +1,75 @@
+.section.our-team {
+    background-color: $third-background-color;
+}
+
+.our-team-section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.our-team-section-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.our-team-section-list-item {
+    background-color: $main-background-color;
+    border-radius: 4px;
+}
+
+.our-team-section-list-item-text {
+    text-align: center;
+    padding: 30px 32px;
+}
+
+.our-team-member-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+
+.our-team-member-position {
+    color: $second-content-text-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+}
+
+.social-media-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media-item {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: $main-background-color;
+    transition: background-color 250ms $animation-timing-function;
+}
+
+.social-media-icon {
+    fill: $passive-icon-color;
+    transition: color 250ms $animation-timing-function;
+}
+
+.social-media-item:hover,
+.social-media-item:focus {
+    background-color: $accent-color;
+    cursor: pointer;
+}
+
+.social-media-item:hover .social-media-icon,
+.social-media-item:focus .social-media-icon {
+    fill: $main-background-color;
+}

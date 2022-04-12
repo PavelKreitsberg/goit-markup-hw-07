@@ -1,0 +1,43 @@
+.section-title.clients {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.our-clients-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-clients-list-item {
+    color: $passive-icon-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $passive-icon-color;
+    border-radius: 4px;
+    padding: 16px 32px;
+    transition: border-color 250ms $animation-timing-function;
+}
+
+.our-clients-list-item:hover,
+.our-clients-list-item:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+    cursor: pointer;
+}
+
+.our-clients-icon {
+    fill: $passive-icon-color;
+    transition: fill 250ms $animation-timing-function;
+}
+
+.our-clients-list-item:hover .our-clients-icon,
+.our-clients-list-item:focus .our-clients-icon {
+    fill: $accent-color;
+}
