@@ -4,16 +4,18 @@
     font-size: 26px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    color: #000000;
-}
-
-.logo-mod-color {
     color: $accent-color;
+
+    &--color {
+        color: #000000;
+    }
 }
 
-
-.logo.bottom {
+.bottom-logo {
     display: inline-block;
-    color: inherit;
     margin-bottom: 20px;
+
+    &--color {
+        color: #FFFFFF;
+    }
 }

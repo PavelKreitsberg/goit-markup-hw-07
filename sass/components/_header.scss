@@ -27,20 +27,20 @@
     margin-left: auto;
 }
 
-.site-nav-item,
-.contacts-item {
+.site-nav__item,
+.contacts__item {
     margin-right: 50px;
 
     position: relative;
 }
 
-.site-nav-item:last-child,
-.contacts-item:last-child {
+.site-nav__item:last-child,
+.contacts__item:last-child {
     margin-right: 0;
 }
 
-.site-nav-link,
-.contacts-link {
+.site-nav__link,
+.contacts__link {
     display: inline-flex;
     color: $main-content-text-color;
     font-weight: 500;
@@ -52,7 +52,19 @@
     transition: color 250ms $animation-timing-function;
 }
 
-.site-nav-link::after {
+.contacts__link {
+    color: $second-content-text-color;
+}
+
+.site-nav__link:hover,
+.contacts__link:hover,
+.site-nav__link:focus,
+.contacts__link:focus {
+    color: $accent-color;
+}
+
+
+.site-nav__link::after {
     content: '';
     position: absolute;
     bottom: -1px;
@@ -67,26 +79,27 @@
     transition: transform 250ms $animation-timing-function;
 }
 
-.site-nav-link:hover::after {
+.site-nav__link:hover::after {
     transform: scaleX(1);
 }
 
-.contacts-link-icon {
+.contacts__icon {
     margin-right: 10px;
     fill: currentColor;
 }
 
-.site-nav-link:hover,
-.site-nav-link:focus {
+
+.site-nav__link--active {
     color: $accent-color;
 }
 
-.contacts-link {
-    color: $second-content-text-color;
-    transition: color 250ms $animation-timing-function;
-}
-
-.contacts-link:hover,
-.contacts-link:focus {
-    color: $accent-color;
+.site-nav__link--active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    transform: scaleX(1);
+    background-color: $accent-color;
 }

@@ -1,18 +1,9 @@
-.section-title.clients {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
-}
-
-.our-clients-list {
+.our-clients {
     display: flex;
     justify-content: space-between;
 }
 
-.our-clients-list-item {
+.our-clients__item {
     color: $passive-icon-color;
     display: flex;
     justify-content: center;
@@ -23,21 +14,21 @@
     border-radius: 4px;
     padding: 16px 32px;
     transition: border-color 250ms $animation-timing-function;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        border-color: $accent-color;
+        cursor: pointer;
+    }
 }
 
-.our-clients-list-item:hover,
-.our-clients-list-item:focus {
-    color: $accent-color;
-    border-color: $accent-color;
-    cursor: pointer;
-}
-
-.our-clients-icon {
+.our-clients__icon {
     fill: $passive-icon-color;
     transition: fill 250ms $animation-timing-function;
-}
 
-.our-clients-list-item:hover .our-clients-icon,
-.our-clients-list-item:focus .our-clients-icon {
-    fill: $accent-color;
+    .our-clients__item:hover &,
+    .our-clients__item:focus & {
+        fill: $accent-color;
+    }
 }

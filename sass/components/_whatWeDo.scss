@@ -1,26 +1,18 @@
-.section.works {
+.works-section {
     padding-top: 0;
 }
 
-.section-title.works {
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
-}
-
-.our-works-list {
+.works {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.our-works-list-item-cover {
+.works__wrapper {
     position: relative;
 }
 
-.our-works-list-item-cover-text {
+.works__text {
     position: absolute;
     bottom: 0;
 
